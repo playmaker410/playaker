@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container{
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1110px;
+}
+
+.navbar .container{
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+    align-items: center;
+    padding:0 auto;
+    width: 100%;
+    padding-left: 0;
+}
+
+
+.navbar{
+    height: 70px;
+}
+
+.navbar ul{
+display: flex;
+justify-content: center;
+align-items: center;
+list-style-type: none;
+margin-right: 5em;  
+width: 100%; 
+}
+
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;  
+}
+
+.container a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0 2.2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    }
+
+    /*NAVBAR ENDS HERE*/
+
+    img{
+    max-width: 20px;
+    margin-top: 1px;
+    padding-left:5px;
+    }
+
+    svg{
+        width: 100%;
+        
+    }
+
+    .second{
+        position: relative;
+        left: 20%;
+    }
+
+    header .container{
+        display: flex;
+        column-gap: 10em;
+        align-items: flex-start;
+        height: 400px;
+    }
+
+
+    .first{
+        align-self: center;
+        line-height: 1.5;
+    }
+    .first h1{
+        font-size: 3rem;
+    }
+    .first p{
+        color: gray;
+    }
+
+    button{
+        padding: 0.8em 0.5em;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        color: white;
+        vertical-align: center;
+        background: linear-gradient(to left,#A855F7, #3B82F6);
+        border-radius: 5px;
+        margin-top: 10px;
+
+        }
+
+        .rating{
+        margin: 0 auto;
+        padding: 0 50px;
+        max-width: 1110px;
+        display: flex;
+        gap: 2.1em;
+
+        }
+
+        .box3-cont h4{
+            font-size: 1.2em;
+            background: linear-gradient(to left,#A855F7, #3B82F6);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+
+        .box3-cont p{
+            color: gray;
+            text-align: center;
+            font-size: 14px;
+        }
+
+
+        
+/*a
+@media(max-width:768px){
+    header .container{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+
+    header .box-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+    }
+
+    header .rating{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+
+    }
+
+       
+    }
+    */
+    
+    

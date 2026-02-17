@@ -5,54 +5,87 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color:rgb(5, 5, 5);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    transition: ;
-
-
 }
 
-nav{
+nav ul{
     width: 100%;
-    height: 60px;
-   
-}
-
-.fullscreen-link{
     list-style-type: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: 60%;
-
- 
-
+    justify-content: flex-end;
 }
 
-.fullscreen-link a{
+nav li{
+    height: 50px;
+    
+}
+
+nav a{
+    height: 100%;
     text-decoration: none;
     color: white;
     font-size: 1em;
     font-weight: bold;
     padding: 0 2.5em;
     text-shadow: 3px 4px 5px  rgb(187, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+
+
 }
 
 .logo{
     margin-right:auto ;
 }
 
-.nav-link a:hover{
+nav a:hover{
     color: rgba(143, 93, 93, 1);
     
 }
 
 /* mobile should follow but later */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    display: none;
+    flex-direction:column ;
+    justify-content: flex-start;
+    align-items:flex-start;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(5, 5, 5, 0.5);
+    border-left:2px solid rgba(226, 235, 250, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+   
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    margin-top: 2em;
+    padding-left: 0;
+        
+}
 
 
+
+.parent-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+
+}
 section{
     margin: 8em;
 }
@@ -62,8 +95,8 @@ section{
 }
 
 #profession{
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight:bold;
     text-shadow: 3px 2px 3px rgba(245, 39, 78, 0.78);
     margin-bottom: 0.6em;
 }
@@ -75,7 +108,6 @@ span{
 }
 
 .text-body{
-    max-width: 60%;
     font-size: 1.2em;
 }
 
@@ -84,6 +116,8 @@ span{
     display: flex;
     flex-direction: row;
     gap: 2em;
+
+    
 
 }
 

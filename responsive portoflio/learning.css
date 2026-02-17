@@ -1,0 +1,39 @@
+button:hover{
+color: rebeccapurple;
+}
+
+button:hover:not(.active){
+    color: blue;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+  
+    
+    
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: 10px 2s ease-in-out0.25;
+    transform: rotatex(50deg);
+
+}
+
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background:yellow;
+
+}
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background: blue;
+
+}

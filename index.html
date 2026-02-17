@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me page</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
 </head>
 
 <body>
-    <nav>
-        <ul class="fullscreen-link">
-            <li class="logo"><a href="">logo</a></li>
-            <li class="nav-link"><a href="">Home</a></li>
-            <li class="nav-link"><a href="">About Us</a></li>
-            <li class="nav-link"><a href="">Projects</a></li>
-            <li class="nav-link"><a href="">Testimonials</a></li>
-        </ul>
-        <!--MOBILE-->
+    <header>
+        <nav>
 
-        <!-- <ul >
-            <li class="logo">logo</li>
-            <li class="sidebar-link">Home</li>
-            <li class="sidebar-link">About Us</li>
-            <li class="sidebar-link">Projects</li>
-            <li class="sidebar-link">Testimonials</li>
-        </ul> -->
-    </nav>
+            <ul>
+                <li class="logo"><a href="">logo</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li onclick="showSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg></a></li>
+<!--MOBILE SIDEBAR-->
+
+            </ul>
+             <ul class="sidebar">
+              <li onclick="hideSidebar()"> <a> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg></a></li>
+
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Projects</a></li>
+                <li ><a href="">Testimonials</a></li>
+            </ul>
+
+
+           
+        </nav>
+    </header>
+
+
+ 
 
     <section>
-        <div>
+        <div class="parent-div">
             <aside>
                 <h1 id="greetings">HI, Am Oshim Odinaka Joshua</h1>
                 <h1 id="profession"><strong><span>WEB </span>DEVELOPER</strong></h1>
@@ -40,13 +59,13 @@
                     using Golang and PHP. I turn complex problems into functional,
                     user-friendly software.
                 <div class="my-btns">
-                    <button type="button" >Projects <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    <button type="button">Projects <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                         </svg>
                     </button>
-                    <button  type="button">Hire Me <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                    <button type="button">Hire Me <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                             fill="currentColor" class="size-6">
                             <path fill-rule="evenodd"
                                 d="M15.75 2.25H21a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V4.81L8.03 17.03a.75.75 0 0 1-1.06-1.06L19.19 3.75h-3.44a.75.75 0 0 1 0-1.5Zm-10.5 4.5a1.5 1.5 0 0 0-1.5 1.5v10.5a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5V10.5a.75.75 0 0 1 1.5 0v8.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V8.25a3 3 0 0 1 3-3h8.25a.75.75 0 0 1 0 1.5H5.25Z"
@@ -54,9 +73,6 @@
                         </svg>
                     </button>
                 </div>
-                </p>
-            </aside>
-        </div>
     </section>
 </body>
 
